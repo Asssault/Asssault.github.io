@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Загадки.</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		function cAnswer(){
+			var result=document.getElementById("answer1").value;
+			var count =0;
+			if(result.toLowerCase()=="машина")
+				count++;
+
+			 result=document.getElementById("answer2").value;
+			if(result.toLowerCase()=="трактор")
+				count++;
+
+			result=document.getElementById("answer3").value;
+			if(result.toLowerCase()=="самолет" || result.toLowerCase()=="самолёт" )
+				count++;
+
+			alert("Вы ответили правильно на " + count + " загадок");
+		}
+	</script>
+</head>
+<body>
+	<div id="header">
+		<a href="index..html">Главная</a><span>/</span>
+		<a href="о себе.html">О себе</a><span>/</span>
+		<a href="Контакт.html">Контактная информация.</a>
+	</div>
+<div id="content">
+	<h1>ЗАГАДКИ.</h1>
+    
+		<div id="box_text">
+			
+
+				<h2>Я загадал несколько загадок, попробуй их угадать!</h2>
+				<p>На каком виде транспорта люди чаще всего передвигаются по городу?</p>
+				<input type="text" id="answer1"></input>
+
+				<p>На каком виде транспорта люди чаще всего передвигаются по пересеченной местности?</p>
+				<input type="text" id="answer2"></input>
+
+				<p>На чем люди чаще всего передвигаются по воздуху?</p>
+				<input type="text" id="answer3"></input>
+
+				<br/>
+
+				<input type="button" value="Ответить" onClick="cAnswer();"></input>
+
+
+
+			
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+	Copyright © 2016 <a href="https://geekbrains.ru/"> GeekBrains </a>
+</div>
+
+</body>
+</html>
